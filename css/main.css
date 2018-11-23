@@ -9565,9 +9565,60 @@ header .cont1 .title {
   text-align: center;
 }
 
+header .cont1 .title .clara {
+  color: white;
+}
+
+header .cont1 .title .datso {
+  color: #073d6e;
+}
+
+header .cont1 .title:hover .clara {
+  color: #073d6e;
+}
+
+header .cont1 .title:hover .datso {
+  color: white;
+}
+
 header .cont1 .scroll {
   position: absolute;
   right: 0%;
   top: 95%;
+}
+
+header .cont1 .scroll:hover {
+  -webkit-animation: bounce 2s infinite;
+          animation: bounce 2s infinite;
+}
+
+@-webkit-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
 }
 /*# sourceMappingURL=main.css.map */

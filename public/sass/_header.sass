@@ -10,8 +10,39 @@ header
             position: absolute 
             top: 10%
             text-align: center
+
+            .clara
+                color: white
+            .datso
+                color: #073d6e
+        .title:hover .clara
+            color: #073d6e
+        .title:hover .datso
+            color: white 
+
         .scroll 
             position: absolute
             right: 0%
-            top: 95%
-                
+            top: 95% 
+
+        .scroll:hover
+            animation: bounce 2s infinite
+
+        @keyframes bounce 
+            0%, 20%, 50%, 80%, 100% 
+                -moz-transform: translateY(0)
+                -ms-transform: translateY(0)
+                -webkit-transform: translateY(0)
+                transform: translateY(0)
+            
+            40% 
+                -moz-transform: translateY(-30px)
+                -ms-transform: translateY(-30px)
+                -webkit-transform: translateY(-30px)
+                transform: translateY(-30px)
+            
+            60% 
+                -moz-transform: translateY(-15px)
+                -ms-transform: translateY(-15px)
+                -webkit-transform: translateY(-15px)
+                transform: translateY(-15px)
