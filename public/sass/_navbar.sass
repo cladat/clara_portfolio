@@ -1,0 +1,27 @@
+header
+    nav 
+        height: 15vh
+        .container
+            a
+                img:hover 
+                    
+            ul 
+                li 
+                    a 
+                        position: relative
+                        transition: width 0.5s, opacity 0.5s
+                        opacity: 1
+                    a:hover 
+                        opacity: 0.3
+                    a:after 
+                        content: ""
+                        background-color: white 
+                        opacity: 1
+                        width: 0
+                        height: 2px
+                        display: block
+                        margin: auto 
+                        transition: width 0.5s
+                    a:hover:after
+                        width: 100%
+                    
