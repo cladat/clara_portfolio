@@ -9627,8 +9627,9 @@ header .cont1 .scroll:hover {
 }
 
 .section1 {
-  margin-top: 8em;
-  margin-bottom: 4em;
+  height: 100vh;
+  margin-top: 5em;
+  margin-bottom: 5em;
 }
 
 .section1 .about .row .col-4 .who {
@@ -9653,6 +9654,31 @@ header .cont1 .scroll:hover {
 }
 
 .section1 .about .row .col-7 .buttons .btns:hover {
+  color: white;
+  background-color: #f8c291;
+  opacity: 0.8;
+}
+
+.section2 {
+  height: 100vh;
+}
+
+.section2 .container .services .card-deck .card {
+  color: rgba(248, 194, 145, 0.8);
+}
+
+.section2 .container .services .card-deck .card:hover {
+  background-color: rgba(248, 194, 145, 0.8);
+  color: white;
+}
+
+.section2 .container .portfolio .port .buts .but {
+  color: #f8c291;
+  background-color: transparent;
+  border: 1px solid #f8c291;
+}
+
+.section2 .container .portfolio .port .buts .but:hover {
   color: white;
   background-color: #f8c291;
   opacity: 0.8;
