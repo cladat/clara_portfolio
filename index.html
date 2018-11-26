@@ -11,31 +11,31 @@
 </head>
 
 <body>
+    <nav class="navbar sticky-top navbar-light bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="./public/img/logo_2.png" width="50" height="50" alt="">
+            </a>
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">about</a>
+                </li>
+                <li class="dot align-self-center"><i class="fas fa-circle fa-xs text-success"></i></li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">services</a>
+                </li>
+                <li class="dot align-self-center"><i class="fas fa-circle fa-xs text-success"></i></li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">projects</a>
+                </li>
+                <li class="dot align-self-center"><i class="fas fa-circle fa-xs text-success"></i></li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
     <header>
-        <nav class="navbar sticky-top navbar-light bg-primary">
-            <div class="container">
-                <a class="navbar-brand" href="#">
-                    <img src="./public/img/logo_2.png" width="50" height="50" alt="">
-                </a>
-                <ul class="nav justify-content-end">
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="#">about</a>
-                    </li>
-                    <li class="dot align-self-center"><i class="fas fa-circle fa-xs text-success"></i></li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="#">services</a>
-                    </li>
-                    <li class="dot align-self-center"><i class="fas fa-circle fa-xs text-success"></i></li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="#">projects</a>
-                    </li>
-                    <li class="dot align-self-center"><i class="fas fa-circle fa-xs text-success"></i></li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="#">contact</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
 
         <div class="container cont1">
             <div class="carousel1 my-4">
@@ -66,12 +66,74 @@
             </div>
 
             <div class="scroll">
-                <a href="#"> <img width="25" height="45" src="./public/img/scrollyes.png" alt=""></a>
+                <a href="#sec1"> <img width="25" height="45" src="./public/img/scrollyes.png" alt=""></a>
             </div>
 
         </div>
     </header>
 
+    <section class="section1" id="sec1">
+
+        <div class="container about">
+            <div class="row justify-content-between">
+                <div class="description col-4">
+                    <div class="who">
+                        <h5 class="text-center my-4">Who's Clara ?</h5>
+                        <p class=""> <span class="text-success"> Lorem </span>ipsum dolor sit amet consectetur,
+                            adipisicing
+                            elit. Soluta
+                            <span class="text-success">necessitatibus</span> iure dolor.
+                            Ducimus,
+                            inventore est. Lorem ipsum, dolor sit <span class="text-success"> amet</span> consectetur
+                            adipisicing elit. Omnis <span class="text-success">veritatis</span>
+                            ratione itaque illum mollitia est magnam alias nisi? Nam libero illum voluptates dolor.</p>
+                        <img class="img-fluid" src="./public/img/me1.png" alt="">
+                    </div>
+                </div>
+                <div class="what col-7 align-self-end">
+                    <h5 class="my-4">What can she do ?</h5>
+                    <div class="buttons d-flex justify-content-around py-4">
+                        <button class="btn-outline-success ">language</button>
+                        <button class="btn-outline-success">design</button>
+                        <button class="btn-outline-success">other</button>
+                    </div>
+                    <div class="row progresses py-4">
+                        <div class="col d-flex flex-column">
+                            <div id="circlecss"> </div>
+                            <div> CSS</div>
+                        </div>
+                        <div class="col d-flex flex-column">
+                            <div class="col" id="circlehtml"> </div>
+                            <div> HTML</div>
+                        </div>
+                        <div class="col d-flex flex-column">
+                            <div class="col" id="circlejs"></div>
+                            <div> JavaScript</div>
+                        </div>
+                    </div>
+                    <div class="row progresses py-4">
+                        <div class="col d-flex flex-column">
+                            <div id="circleps"> </div>
+                            <div class="desc">Photoshop</div>
+                        </div>
+                        <div class="col d-flex flex-column">
+                            <div class="col" id="circleph"> </div>
+                            <div> Photography</div>
+                        </div>
+                        <div class="col d-flex flex-column">
+                            <div class="col" id="circlevi"></div>
+                            <div> Film making</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="./node_modules/jquery-circle-progress/dist/circle-progress.js"></script>
     <script src="./public/js/main.js"></script>
     <script src="./node_modules/jquery/dist/jquery.min.js"></script>
     <script src="./node_modules/bootstrap/js/dist/util.js"></script>

@@ -9516,24 +9516,28 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 
-header nav {
+body {
+  font-family: BritannicBold;
+}
+
+body nav {
   height: 15vh;
 }
 
-header nav .container ul li a {
+body nav .container ul li a {
   position: relative;
-  -webkit-transition: width 0.5s, opacity 0.5s;
-  transition: width 0.5s, opacity 0.5s;
-  opacity: 1;
+  color: white;
+  -webkit-transition: width 0.5s color 0.5s;
+  transition: width 0.5s color 0.5s;
 }
 
-header nav .container ul li a:hover {
-  opacity: 0.3;
+body nav .container ul li a:hover {
+  color: #f8c291;
 }
 
-header nav .container ul li a:after {
+body nav .container ul li a:after {
   content: "";
-  background-color: white;
+  background-color: #f8c291;
   opacity: 1;
   width: 0;
   height: 2px;
@@ -9543,7 +9547,7 @@ header nav .container ul li a:after {
   transition: width 0.5s;
 }
 
-header nav .container ul li a:hover:after {
+body nav .container ul li a:hover:after {
   width: 100%;
 }
 
@@ -9620,5 +9624,28 @@ header .cont1 .scroll:hover {
     -webkit-transform: translateY(-15px);
     transform: translateY(-15px);
   }
+}
+
+.section1 {
+  margin-top: 8em;
+  margin-bottom: 4em;
+}
+
+.section1 .about .row .col-4 {
+  padding-bottom: 24em;
+}
+
+.section1 .about .row .col-4 .who {
+  position: relative;
+}
+
+.section1 .about .row .col-4 .who img {
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+}
+
+.section1 .about .row .col-7 {
+  text-align: center;
 }
 /*# sourceMappingURL=main.css.map */
