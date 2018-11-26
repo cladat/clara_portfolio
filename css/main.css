@@ -9631,10 +9631,6 @@ header .cont1 .scroll:hover {
   margin-bottom: 4em;
 }
 
-.section1 .about .row .col-4 {
-  padding-bottom: 24em;
-}
-
 .section1 .about .row .col-4 .who {
   position: relative;
 }
@@ -9642,10 +9638,23 @@ header .cont1 .scroll:hover {
 .section1 .about .row .col-4 .who img {
   position: absolute;
   z-index: -1;
-  top: 50%;
+  top: 60%;
 }
 
 .section1 .about .row .col-7 {
   text-align: center;
+  padding-top: 5em;
+}
+
+.section1 .about .row .col-7 .buttons .btns {
+  color: #f8c291;
+  background-color: transparent;
+  border: 1px solid #f8c291;
+}
+
+.section1 .about .row .col-7 .buttons .btns:hover {
+  color: white;
+  background-color: #f8c291;
+  opacity: 0.8;
 }
 /*# sourceMappingURL=main.css.map */
