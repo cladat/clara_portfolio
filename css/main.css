@@ -9659,10 +9659,6 @@ header .cont1 .scroll:hover {
   opacity: 0.8;
 }
 
-.section2 {
-  height: 100vh;
-}
-
 .section2 .container .services h5 {
   font-family: Nunito;
 }
@@ -9703,7 +9699,6 @@ header .cont1 .scroll:hover {
 }
 
 .section2 .container .portfolio .folio div .content {
-  position: relative;
   text-align: center;
 }
 
@@ -9744,5 +9739,107 @@ header .cont1 .scroll:hover {
 
 .section2 .container .portfolio .folio div .goto .stuff:hover {
   color: #f8c291;
+}
+
+.section3 .container .row .contactpage h5 {
+  font-family: Nunito;
+}
+
+.section3 .container .row .contactpage form .form-group input, .section3 .container .row .contactpage form .form-group select, .section3 .container .row .contactpage form .form-group textarea {
+  background-color: rgba(248, 194, 145, 0.3);
+  font-family: Nunito;
+}
+
+.section3 .container .row .contactpage form .message textarea {
+  height: 20vh;
+}
+
+.section3 .container .row .contactpage form .sub .hello {
+  width: 100px;
+  height: 40px;
+}
+
+.section3 .container .row .contactpage form .sub .hello div {
+  padding-top: 8px;
+  outline: none;
+  width: 100px;
+  height: 40px;
+  text-align: center;
+  border: 2px solid #073d6e;
+  border-radius: 40px;
+  background: #fff;
+  color: #073d6e;
+  font-size: 14px;
+  font-family: Nunito;
+  letter-spacing: 1px;
+  text-shadow: 0;
+  cursor: pointer;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+
+.section3 .container .row .contactpage form .sub .hello div:hover {
+  color: white;
+  background: #073d6e;
+}
+
+.section3 .container .row .contactpage form .sub .hello div:active {
+  letter-spacing: 2px;
+}
+
+.section3 .container .row .contactpage form .sub .hello div:after {
+  content: "Send";
+}
+
+.section3 .container .row .contactpage form .sub .hello .onclic {
+  width: 40px;
+  margin-left: 30%;
+  border-color: #f8c291;
+  border-width: 3px;
+  font-size: 0;
+  border-left-color: #073d6e;
+  -webkit-animation: rotating 2s 0.25s linear;
+          animation: rotating 2s 0.25s linear;
+}
+
+.section3 .container .row .contactpage form .sub .hello .onclic:after {
+  content: "";
+}
+
+.section3 .container .row .contactpage form .sub .hello .onclic:hover {
+  color: #073d6e;
+  background: white;
+}
+
+.section3 .container .row .contactpage form .sub .hello .validate {
+  font-size: 14px;
+  color: white;
+  background: #073d6e;
+}
+
+.section3 .container .row .contactpage form .sub .hello .validate:after {
+  content: "ok!";
+}
+
+@-webkit-keyframes rotating {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotating {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
 }
 /*# sourceMappingURL=main.css.map */

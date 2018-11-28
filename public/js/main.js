@@ -204,36 +204,26 @@ butother.addEventListener("click", function () {
     }
 })
 
-// function filterWeb() {
-//     portweb = port.querySelectorAll('.portweb');
-//     portdesign = port.querySelectorAll('.portdesign');
+// 4. Submit button
 
-//     for (let i = 0; i < 6; i++) {
-//         portdesign[i].classList.add('d-none');
-//         portweb[i].classList.remove('d-none');
-//     }
-// };
 
-// function filterDesign() {
-//     portweb = port.querySelectorAll('.portweb');
-//     portdesign = port.querySelectorAll('.portdesign');
+$(function () {
+    $("#button").click(function () {
+        $("#button").addClass("onclic", 250);
+        validate();
+    });
 
-//     for (let i = 0; i < 6; i++) {
-//         portweb[i].classList.add('d-none');
-//         portdesign[i].classList.remove('d-none');
-//     }
-// };
+    function validate() {
+        setTimeout(function () {
+            $("#button").removeClass("onclic");
+            $("#button").addClass("validate", 450);
+            callback();
+        }, 2200);
+    }
 
-// function filterAlll() {
-//     portweb = port.querySelectorAll('.portweb');
-//     portdesign = port.querySelectorAll('.portdesign');
-
-//     for (let i = 0; i < 6; i++) {
-//         portweb[i].classList.remove('d-none');
-//         portdesign[i].classList.remove('d-none');
-//     }
-// };
-
-// butweb.addEventListener('click', filterWeb);
-// butdesign.addEventListener('click', filterDesign);
-// butall.addEventListener('click', filterAlll);
+    function callback() {
+        setTimeout(function () {
+            $("#button").removeClass("validate");
+        }, 2250);
+    }
+});
