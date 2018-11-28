@@ -142,40 +142,67 @@ function filterAll() {
 
 // 3. Filtres portfolio
 
-// let butweb = document.querySelector('.butweb');
-// let butdesign = document.querySelector('.butdesign');
-// let butother = document.querySelector('.butother');
-// let butall = document.querySelector('.butall');
+let butweb = document.querySelector('.butweb');
+let butdesign = document.querySelector('.butdesign');
+let butother = document.querySelector('.butother');
+let butall = document.querySelector('.butall');
 
-// butdesign.addEventListener("click", function () {
+butdesign.addEventListener("click", function () {
 
-//     let port = document.querySelectorAll(".foli");
+    let port = document.querySelectorAll(".foli");
 
-//     for (var i = 0; i < port.length; i++) {
+    for (var i = 0; i < port.length; i++) {
 
-//         if (port[i].classList.contains("portdesign")) {
-//             document.querySelectorAll(".foli")[i].style.display = "initial";
+        if (port[i].classList.contains("portdesign")) {
+            document.querySelectorAll(".foli")[i].style.display = "initial";
 
-//         } else {
-//             document.querySelectorAll(".foli")[i].style.display = "none";
-//         }
-//     }
-// })
+        } else {
+            document.querySelectorAll(".foli")[i].style.display = "none";
+        }
+    }
+})
 
-// butweb.addEventListener("click", function () {
+butweb.addEventListener("click", function () {
 
-//     let port = document.querySelectorAll(".foli");
+    let port = document.querySelectorAll(".foli");
 
-//     for (var i = 0; i < port.length; i++) {
+    for (var i = 0; i < port.length; i++) {
 
-//         if (port[i].classList.contains("portweb")) {
-//             document.querySelectorAll(".foli")[i].style.display = "initial";
+        if (port[i].classList.contains("portweb")) {
+            document.querySelectorAll(".foli")[i].style.display = "initial";
 
-//         } else {
-//             document.querySelectorAll(".foli")[i].style.display = "none";
-//         }
-//     }
-// })
+        } else {
+            document.querySelectorAll(".foli")[i].style.display = "none";
+        }
+    }
+})
+
+butall.addEventListener("click", function () {
+
+    let port = document.querySelectorAll(".foli");
+
+    for (var i = 0; i < port.length; i++) {
+
+        if (port[i].classList.contains("foli")) {
+            document.querySelectorAll(".foli")[i].style.display = "initial";
+
+        }
+    }
+})
+butother.addEventListener("click", function () {
+
+    let port = document.querySelectorAll(".foli");
+
+    for (var i = 0; i < port.length; i++) {
+
+        if (port[i].classList.contains("other")) {
+            document.querySelectorAll(".foli")[i].style.display = "initial";
+
+        } else {
+            document.querySelectorAll(".foli")[i].style.display = "none";
+        }
+    }
+})
 
 // function filterWeb() {
 //     portweb = port.querySelectorAll('.portweb');
