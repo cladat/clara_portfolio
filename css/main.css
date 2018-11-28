@@ -9842,4 +9842,17 @@ header .cont1 .scroll:hover {
             transform: rotate(360deg);
   }
 }
+
+footer .container .row .col-1 a {
+  -webkit-transition: opacity .5s;
+  transition: opacity .5s;
+}
+
+footer .container .row .col-1 a:hover {
+  opacity: 0.7;
+}
+
+footer .container .row .col span {
+  font-family: Nunito;
+}
 /*# sourceMappingURL=main.css.map */
