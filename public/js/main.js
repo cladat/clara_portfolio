@@ -88,7 +88,7 @@ $('#circlevi').circleProgress({
 //     }
 // });
 
-// 2. Filtres
+// 2. Filtres skills
 
 let languagebtn = document.querySelector('.language');
 let designbtn = document.querySelector('.design');
@@ -139,3 +139,74 @@ function filterAll() {
     lang.classList.remove('d-none');
     desi.classList.remove('d-none');
 }
+
+// 3. Filtres portfolio
+
+// let butweb = document.querySelector('.butweb');
+// let butdesign = document.querySelector('.butdesign');
+// let butother = document.querySelector('.butother');
+// let butall = document.querySelector('.butall');
+
+// butdesign.addEventListener("click", function () {
+
+//     let port = document.querySelectorAll(".foli");
+
+//     for (var i = 0; i < port.length; i++) {
+
+//         if (port[i].classList.contains("portdesign")) {
+//             document.querySelectorAll(".foli")[i].style.display = "initial";
+
+//         } else {
+//             document.querySelectorAll(".foli")[i].style.display = "none";
+//         }
+//     }
+// })
+
+// butweb.addEventListener("click", function () {
+
+//     let port = document.querySelectorAll(".foli");
+
+//     for (var i = 0; i < port.length; i++) {
+
+//         if (port[i].classList.contains("portweb")) {
+//             document.querySelectorAll(".foli")[i].style.display = "initial";
+
+//         } else {
+//             document.querySelectorAll(".foli")[i].style.display = "none";
+//         }
+//     }
+// })
+
+// function filterWeb() {
+//     portweb = port.querySelectorAll('.portweb');
+//     portdesign = port.querySelectorAll('.portdesign');
+
+//     for (let i = 0; i < 6; i++) {
+//         portdesign[i].classList.add('d-none');
+//         portweb[i].classList.remove('d-none');
+//     }
+// };
+
+// function filterDesign() {
+//     portweb = port.querySelectorAll('.portweb');
+//     portdesign = port.querySelectorAll('.portdesign');
+
+//     for (let i = 0; i < 6; i++) {
+//         portweb[i].classList.add('d-none');
+//         portdesign[i].classList.remove('d-none');
+//     }
+// };
+
+// function filterAlll() {
+//     portweb = port.querySelectorAll('.portweb');
+//     portdesign = port.querySelectorAll('.portdesign');
+
+//     for (let i = 0; i < 6; i++) {
+//         portweb[i].classList.remove('d-none');
+//         portdesign[i].classList.remove('d-none');
+//     }
+// };
+
+// butweb.addEventListener('click', filterWeb);
+// butdesign.addEventListener('click', filterDesign);
+// butall.addEventListener('click', filterAlll);

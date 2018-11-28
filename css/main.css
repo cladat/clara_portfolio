@@ -9521,7 +9521,7 @@ body {
 }
 
 body nav {
-  height: 15vh;
+  height: 10vh;
 }
 
 body nav .container ul li a {
@@ -9663,6 +9663,10 @@ header .cont1 .scroll:hover {
   height: 100vh;
 }
 
+.section2 .container .services h5 {
+  font-family: Nunito;
+}
+
 .section2 .container .services .card-deck .card {
   color: rgba(248, 194, 145, 0.8);
 }
@@ -9670,6 +9674,10 @@ header .cont1 .scroll:hover {
 .section2 .container .services .card-deck .card:hover {
   background-color: rgba(248, 194, 145, 0.8);
   color: white;
+}
+
+.section2 .container .portfolio .port h5 {
+  font-family: Nunito;
 }
 
 .section2 .container .portfolio .port .buts .but {
@@ -9682,5 +9690,59 @@ header .cont1 .scroll:hover {
   color: white;
   background-color: #f8c291;
   opacity: 0.8;
+}
+
+.section2 .container .portfolio .folio {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.section2 .container .portfolio .folio div {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.section2 .container .portfolio .folio div .content {
+  position: relative;
+  text-align: center;
+}
+
+.section2 .container .portfolio .folio div .content a {
+  position: relative;
+}
+
+.section2 .container .portfolio .folio div .content a img {
+  opacity: 0.6;
+  -webkit-transition: opacity .2s, -webkit-transform .2s;
+  transition: opacity .2s, -webkit-transform .2s;
+  transition: transform .2s, opacity .2s;
+  transition: transform .2s, opacity .2s, -webkit-transform .2s;
+}
+
+.section2 .container .portfolio .folio div .content a img:hover {
+  opacity: 1;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.section2 .container .portfolio .folio div .content a i {
+  z-index: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  opacity: 0.8;
+}
+
+.section2 .container .portfolio .folio div .goto .stuff {
+  font-family: Nunito;
+  font-size: 25px;
+  text-decoration: none;
+  color: #000000;
+}
+
+.section2 .container .portfolio .folio div .goto .stuff:hover {
+  color: #f8c291;
 }
 /*# sourceMappingURL=main.css.map */
