@@ -1,5 +1,6 @@
 .section3
     .container
+        position: relative
         .row
             .contactpage
                 h5 
@@ -39,7 +40,7 @@
                             div:active
                                 letter-spacing: 2px
                             div:after
-                                content: "Send"
+                                content: "Send love"
 
                             .onclic
                                 width: 40px
@@ -67,3 +68,35 @@
                                     transform: rotate(0deg)
                                 to
                                     transform: rotate(360deg)
+
+        .scroll 
+            position: absolute
+            right: 0%
+            top: 100% 
+
+        .scroll:hover
+            animation: bounce 2s infinite
+
+        @keyframes bounce 
+            0%, 20%, 50%, 80%, 100% 
+                -moz-transform: translateY(0)
+                -ms-transform: translateY(0)
+                -webkit-transform: translateY(0)
+                transform: translateY(0)
+            
+            40% 
+                -moz-transform: translateY(-30px)
+                -ms-transform: translateY(-30px)
+                -webkit-transform: translateY(-30px)
+                transform: translateY(-30px)
+            
+            60% 
+                -moz-transform: translateY(-15px)
+                -ms-transform: translateY(-15px)
+                -webkit-transform: translateY(-15px)
+                transform: translateY(-15px)
+
+@media only screen and (max-width: 400px)
+    .section3 .container .row .contactpage
+        flex: 0 0 83.33333%
+        max-width: 83.33333%

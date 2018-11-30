@@ -1,4 +1,5 @@
 .section2
+    padding-top: 9vh
     .container
         .services
             h5 
@@ -10,6 +11,7 @@
                     background-color: rgba(248,194,145, 0.8)
                     color: white 
         .portfolio
+            padding-top: 8vh
             .port
                 h5 
                     font-family: Nunito
@@ -56,4 +58,42 @@
                             color: #f8c291     
                     
             
-        
+@media only screen and (max-width: 1024px)
+    .section2 .container .portfolio .folio .foli
+        margin-left: auto
+        margin-right: auto
+    .section2 .container .portfolio .folio div .content a img 
+        width: 280px
+@media only screen and (max-width: 768px)
+    .section2 .container .services
+        padding-bottom: 0 !important
+    .section2 .container .services .card-deck .card .card-body
+        padding: 1rem
+
+
+@media only screen and (max-width: 400px)
+    .section2
+        margin-bottom: 0
+
+    .section2 .container .services h5
+        margin-bottom: 0 !important
+
+    .section2 .container .services .card-deck .card i
+        font-size: 3em !important
+
+    .section2 .container .portfolio .folio
+        justify-content: space-between
+    .section2 .container .portfolio .folio div
+        padding-left: 0
+        padding-right: 0
+    .section2 .container .portfolio .folio div .content a img 
+        width: 160px
+    .section2 .container .portfolio .folio div .goto .stuff
+        font-size: 15px
+    
+
+@media only screen and (max-width: 340px)
+    .section2 .container .portfolio .port .buts button 
+        font-size: 13px
+    .section2 .container .portfolio .folio div .content a img 
+        width: 140px

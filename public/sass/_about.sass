@@ -1,7 +1,7 @@
 .section1
-    height: 100vh
+    padding-top: 7vh
     margin-top: 5em
-    margin-bottom: 5em
+    padding-bottom: 13em
     .about
         .row
             .col-4
@@ -23,3 +23,78 @@
                         color: white
                         background-color: #f8c291
                         opacity: 0.8
+
+@media only screen and (max-width: 1024px)
+    .section1
+        padding-top: 5vh
+        padding-bottom: 7em
+
+@media only screen and (max-width: 768px)
+    .section1 .about .row .col-4 .who img
+        top: 90%
+
+@media only screen and (max-width: 400px)
+
+    .section1
+        margin-top: 0
+        padding-bottom: 5em
+    .section1 .about .row .description
+        flex-grow: 1 !important
+        max-width: 100%
+    .section1 .about .row .what
+        flex-grow: 1 !important
+        max-width: 100%
+    .section1 .about .row .description .who
+        text-align: center
+    .section1 .about .row .description .who p
+        font-size: 15px
+    .section1 .about .row .description .who img 
+        position: inherit
+        width: 70%
+
+@media only screen and (max-width: 340px)
+    .section1 .about .row .description .who p
+        font-size: 12px
+    .section1 .about .row .description .who h5
+        font-size: 15px
+
+    .section1 .about .row .what h5
+        font-size: 15px
+    .section1 .about .row .what .buttons button
+        font-size: 15px
+    .section1 .about .row .what .row .col div 
+        font-size: 15px
+    .section1 .about .row .what .row .col div canvas 
+        width: 70px !important
+        height: 70px !important
+
+    
+    // .section1
+    //     padding-bottom: 5em
+    //     margin-top: 0
+    // .section1 .about .row .col-4 .who h5
+    //     font-size: 15px !important
+    // .section1 .about .row .col-4 .who p 
+    //     font-size: 10px
+
+    // .section1 .about .row .col-4 .who img 
+    //     top: 100%
+    // .section1 .about .row .what
+    //     padding-top: 0em
+    // .section1 .about .row .what h5
+    //     font-size: 15px !important
+    // .section1 .about .row .what .buttons
+    //     padding-top: 0 !important
+    // .section1 .about .row .what .buttons button 
+    //     font-size: 10px
+    // .section1 .about .row .what .row .col div canvas 
+    //     width: 50px !important
+    //     height: 50px !important
+    // .section1 .about .row .what .row .col
+    //     display: block !important
+    // .section1 .about .row .what .row .col div
+    //     font-size: 10px
+    //     display: block !important
+
+
+        

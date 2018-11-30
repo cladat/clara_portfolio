@@ -22,8 +22,8 @@ header
 
         .scroll 
             position: absolute
-            right: 0%
-            top: 95% 
+            right: 10%
+            top: 80% 
 
         .scroll:hover
             animation: bounce 2s infinite
@@ -46,3 +46,20 @@ header
                 -ms-transform: translateY(-15px)
                 -webkit-transform: translateY(-15px)
                 transform: translateY(-15px)
+
+@media only screen and (max-width: 768px)
+    .title h1
+        font-size: 90px !important
+    
+    .scroll
+        display: none
+        
+@media only screen and (max-width: 400px)
+    .title h1
+        font-size: 60px !important
+    .title p 
+        font-size: 10px
+
+@media only screen and (max-width: 340px)
+    .title h1 
+        font-size: 40px !important

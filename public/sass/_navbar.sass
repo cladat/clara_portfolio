@@ -1,16 +1,13 @@
 body 
     font-family: BritannicBold
     nav 
-        height: 10vh
-        .container
+        .collapse
             ul 
                 li 
                     a 
-                        position: relative
-                        color: white
                         transition: width 0.5s color 0.5s
-                    a:hover 
-                        color: #f8c291
+                    a:hover
+                        color: white 
                     a:after 
                         content: ""
                         background-color: #f8c291
@@ -22,4 +19,18 @@ body
                         transition: width 0.5s
                     a:hover:after
                         width: 100%
-                        
+
+
+@media only screen and (max-width: 768px)
+    .collapse ul li a:hover
+        opacity: 0.5
+    .collapse ul li a:hover:after
+        display: none
+
+
+@media only screen and (max-width: 400px)
+    nav a img 
+        width: 30px
+        height: 30px
+
+                    

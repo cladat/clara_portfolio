@@ -4579,11 +4579,11 @@ input[type="button"].btn-block {
 }
 
 .navbar-light .navbar-nav .nav-link {
-  color: rgba(0, 0, 0, 0.5);
+  color: white;
 }
 
 .navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
-  color: rgba(0, 0, 0, 0.7);
+  color: white;
 }
 
 .navbar-light .navbar-nav .nav-link.disabled {
@@ -4598,16 +4598,16 @@ input[type="button"].btn-block {
 }
 
 .navbar-light .navbar-toggler {
-  color: rgba(0, 0, 0, 0.5);
+  color: white;
   border-color: rgba(0, 0, 0, 0.1);
 }
 
 .navbar-light .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 
 .navbar-light .navbar-text {
-  color: rgba(0, 0, 0, 0.5);
+  color: white;
 }
 
 .navbar-light .navbar-text a {
@@ -9520,22 +9520,16 @@ body {
   font-family: BritannicBold;
 }
 
-body nav {
-  height: 10vh;
-}
-
-body nav .container ul li a {
-  position: relative;
-  color: white;
+body nav .collapse ul li a {
   -webkit-transition: width 0.5s color 0.5s;
   transition: width 0.5s color 0.5s;
 }
 
-body nav .container ul li a:hover {
-  color: #f8c291;
+body nav .collapse ul li a:hover {
+  color: white;
 }
 
-body nav .container ul li a:after {
+body nav .collapse ul li a:after {
   content: "";
   background-color: #f8c291;
   opacity: 1;
@@ -9547,8 +9541,24 @@ body nav .container ul li a:after {
   transition: width 0.5s;
 }
 
-body nav .container ul li a:hover:after {
+body nav .collapse ul li a:hover:after {
   width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  .collapse ul li a:hover {
+    opacity: 0.5;
+  }
+  .collapse ul li a:hover:after {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  nav a img {
+    width: 30px;
+    height: 30px;
+  }
 }
 
 header {
@@ -9587,8 +9597,8 @@ header .cont1 .title:hover .datso {
 
 header .cont1 .scroll {
   position: absolute;
-  right: 0%;
-  top: 95%;
+  right: 10%;
+  top: 80%;
 }
 
 header .cont1 .scroll:hover {
@@ -9626,10 +9636,34 @@ header .cont1 .scroll:hover {
   }
 }
 
+@media only screen and (max-width: 768px) {
+  .title h1 {
+    font-size: 90px !important;
+  }
+  .scroll {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .title h1 {
+    font-size: 60px !important;
+  }
+  .title p {
+    font-size: 10px;
+  }
+}
+
+@media only screen and (max-width: 340px) {
+  .title h1 {
+    font-size: 40px !important;
+  }
+}
+
 .section1 {
-  height: 100vh;
+  padding-top: 7vh;
   margin-top: 5em;
-  margin-bottom: 5em;
+  padding-bottom: 13em;
 }
 
 .section1 .about .row .col-4 .who {
@@ -9659,6 +9693,74 @@ header .cont1 .scroll:hover {
   opacity: 0.8;
 }
 
+@media only screen and (max-width: 1024px) {
+  .section1 {
+    padding-top: 5vh;
+    padding-bottom: 7em;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .section1 .about .row .col-4 .who img {
+    top: 90%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .section1 {
+    margin-top: 0;
+    padding-bottom: 5em;
+  }
+  .section1 .about .row .description {
+    -webkit-box-flex: 1 !important;
+        -ms-flex-positive: 1 !important;
+            flex-grow: 1 !important;
+    max-width: 100%;
+  }
+  .section1 .about .row .what {
+    -webkit-box-flex: 1 !important;
+        -ms-flex-positive: 1 !important;
+            flex-grow: 1 !important;
+    max-width: 100%;
+  }
+  .section1 .about .row .description .who {
+    text-align: center;
+  }
+  .section1 .about .row .description .who p {
+    font-size: 15px;
+  }
+  .section1 .about .row .description .who img {
+    position: inherit;
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 340px) {
+  .section1 .about .row .description .who p {
+    font-size: 12px;
+  }
+  .section1 .about .row .description .who h5 {
+    font-size: 15px;
+  }
+  .section1 .about .row .what h5 {
+    font-size: 15px;
+  }
+  .section1 .about .row .what .buttons button {
+    font-size: 15px;
+  }
+  .section1 .about .row .what .row .col div {
+    font-size: 15px;
+  }
+  .section1 .about .row .what .row .col div canvas {
+    width: 70px !important;
+    height: 70px !important;
+  }
+}
+
+.section2 {
+  padding-top: 9vh;
+}
+
 .section2 .container .services h5 {
   font-family: Nunito;
 }
@@ -9670,6 +9772,10 @@ header .cont1 .scroll:hover {
 .section2 .container .services .card-deck .card:hover {
   background-color: rgba(248, 194, 145, 0.8);
   color: white;
+}
+
+.section2 .container .portfolio {
+  padding-top: 8vh;
 }
 
 .section2 .container .portfolio .port h5 {
@@ -9741,6 +9847,65 @@ header .cont1 .scroll:hover {
   color: #f8c291;
 }
 
+@media only screen and (max-width: 1024px) {
+  .section2 .container .portfolio .folio .foli {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .section2 .container .portfolio .folio div .content a img {
+    width: 280px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .section2 .container .services {
+    padding-bottom: 0 !important;
+  }
+  .section2 .container .services .card-deck .card .card-body {
+    padding: 1rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .section2 {
+    margin-bottom: 0;
+  }
+  .section2 .container .services h5 {
+    margin-bottom: 0 !important;
+  }
+  .section2 .container .services .card-deck .card i {
+    font-size: 3em !important;
+  }
+  .section2 .container .portfolio .folio {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .section2 .container .portfolio .folio div {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .section2 .container .portfolio .folio div .content a img {
+    width: 160px;
+  }
+  .section2 .container .portfolio .folio div .goto .stuff {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 340px) {
+  .section2 .container .portfolio .port .buts button {
+    font-size: 13px;
+  }
+  .section2 .container .portfolio .folio div .content a img {
+    width: 140px;
+  }
+}
+
+.section3 .container {
+  position: relative;
+}
+
 .section3 .container .row .contactpage h5 {
   font-family: Nunito;
 }
@@ -9788,7 +9953,7 @@ header .cont1 .scroll:hover {
 }
 
 .section3 .container .row .contactpage form .sub .hello div:after {
-  content: "Send";
+  content: "Send love";
 }
 
 .section3 .container .row .contactpage form .sub .hello .onclic {
@@ -9840,6 +10005,41 @@ header .cont1 .scroll:hover {
   to {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
+  }
+}
+
+.section3 .container .scroll {
+  position: absolute;
+  right: 0%;
+  top: 100%;
+}
+
+.section3 .container .scroll:hover {
+  -webkit-animation: bounce 2s infinite;
+          animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .section3 .container .row .contactpage {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 83.33333%;
+            flex: 0 0 83.33333%;
+    max-width: 83.33333%;
   }
 }
 
